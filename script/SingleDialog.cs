@@ -1,5 +1,5 @@
 /*
- 这是一个单人对话框的模板，主要用户新手指引
+ ??????????????????壬?????????????
  */
 
 using System.Collections;
@@ -10,20 +10,22 @@ using UnityEngine.UI;
 public class SingleDialog : MonoBehaviour
 {
     public Text DialogText;
-    public List<string> textList = new List<string>();//存储每行文案的字符串列表
+    public List<string> textList = new List<string>();//?洢??????????????б?
     [SerializeField]
-    int currentRow = 0;//当前在第几句
+    int currentRow = 0;//?????????
     bool isTyping = false;
 
     private void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.A))
             Respond();
+            */
     }
 
     private void init(TextAsset txt)
     {
-        //传入策划写好的txt文档，并拆解其中的内容
+        //??????д???txt?????????????е?????
     }
 
     /*
@@ -55,7 +57,7 @@ public class SingleDialog : MonoBehaviour
 
     }
 
-    //携程 逐字显示
+    //Я?? ???????
     IEnumerator StartTalk_OneByOne(float intervalTime = 0.1f, bool isContinue = true)
     {
         this.gameObject.SetActive(true);
@@ -82,6 +84,6 @@ public class SingleDialog : MonoBehaviour
         currentRow++;
     }
 
-    //渐变效果
+    //????Ч??
 
 }
